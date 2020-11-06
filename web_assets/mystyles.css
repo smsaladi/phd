@@ -1,0 +1,20 @@
+/* 
+ * Some customizations to correspond to pandoc html tags
+ *
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+/* copied from bs4_book.css:caption */
+figcaption {
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+

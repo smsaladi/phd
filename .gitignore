@@ -1,6 +1,4 @@
-# ------
 # Common
-# ------
 *~
 .DS_Store
 .svn
@@ -9,14 +7,4 @@
 *.swp
 Thumbs.db
 
-# -----------------------
-# Local Development Tools
-# -----------------------
-/node_modules
-/npm-debug.log
-src/data/*
-
-# ---------------
-# Compiled assets
-# ---------------
-.sass-cache
+build
