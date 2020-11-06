@@ -26,11 +26,8 @@ indent: true
 
 # Theme settings
 theme_title: "Thesis"
-baseurl: "https://gchure.github.io/phd/"
+baseurl: "https://shyam.saladi.org/phd/"
 header:
-text: Griffin D. Chure | PhD Thesis
-copyright: Copyright &copy; 2020. - Griffin D. Chure <br>All rights reserved.
-
 header-includes:
 - |
   ```{=html}
@@ -55,4 +52,15 @@ header-includes:
   </script>
   ```
 
+chapters: true
+figPrefix:
+  - "Fig."
+  - "Figs."
+eqnPrefix:
+  - "Eq."
+  - "Eqs."
+secPrefix:
+  - "Sec."
+  - "Secs."
+chapDelim: "."
 ---
