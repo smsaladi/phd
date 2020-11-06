@@ -13,6 +13,7 @@ pdf:
 	ch*/*.md \
 	ref_heading.md \
 	-o $(BUILD)/thesis_SaladiShyamM.pdf \
+	--pdf-engine=xelatex \
 	--default-image-extension=.pdf \
 	--template=styles/template.tex \
 	--filter pandoc-crossref \
