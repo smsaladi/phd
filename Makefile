@@ -7,26 +7,27 @@ BUILD = build
 all: pdf html
 
 pdf:
-	mkdir -p $(BUILD)/pdffigs && \
-	find chapter_*/figs -type f -exec cp {} $(BUILD)/pdffigs/ \; && \
+	mkdir -p $(BUILD)/pdffigs/figs && \
+	find ch*/figs -type f -exec cp {} $(BUILD)/pdffigs/figs/ \; && \
 	TEXINPUTS="::./styles" $(PANDOC) metadata.yaml \
-	chapter*/*.md \
+	ch*/*.md \
 	ref_heading.md \
 	-o $(BUILD)/thesis_SaladiShyamM.pdf \
 	--default-image-extension=.pdf \
 	--template=styles/template.tex \
 	--filter pandoc-crossref \
-	--bibliography=references.bib \
 	--lua-filter=frontmatter/short-captions.lua \
+	--citeproc \
+	--bibliography=references.bib \
 	--top-level-division chapter \
-	--resource-path='.:$(BUILD)/pdffigs:' && \
+	--resource-path='.:$(BUILD)/pdffigs:$(BUILD)/pdffigs/figs:' && \
 	rm -r $(BUILD)/pdffigs
 
-chapters = chapter_* frontmatter
+chapters = ch* frontmatter
 
 html: $(chapters) search
 $(chapters):
-	[ -d "$@/figs" ] && mkdir -p $(BUILD)/figs/ && cp $@/figs/*.png $(BUILD)/figs/ || true; \
+	[ -d "$@/figs" ] && mkdir -p $(BUILD)/figs/ && cp $@/figs/* $(BUILD)/figs/ || true; \
 	$(PANDOC) \
 	$@/*.md \
 	ref_heading.md \
@@ -37,6 +38,7 @@ $(chapters):
 	--dpi=300 \
 	--template=styles/bs4_book.html \
 	--filter pandoc-crossref \
+	--citeproc \
 	--bibliography=references.bib \
 	--metadata=link-citations \
 	--lua-filter=frontmatter/short-captions.lua \

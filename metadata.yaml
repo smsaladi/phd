@@ -17,7 +17,7 @@ rights_statement: |
     \href{http://shyam.saladi.org/phd}{http://shyam.saladi.org/phd} or at \href{https://resolver.caltech.edu/CaltechTHESIS}{https://resolver.caltech.edu/CaltechTHESIS} (archival).
 logo: true
 bibliography: references.bib
-csl: styles/elife-doi_or_url.csl
+csl: styles/elife.csl
 ownpubs: frontmatter/published.md
 acknowledgements: frontmatter/acknowledgements.md
 abstract: frontmatter/abstract.md
