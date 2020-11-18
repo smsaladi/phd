@@ -50,10 +50,11 @@
         \IfInteger{#1}{#2}{#3}%
     }%
 }%
-\newcommand{\formatchapternumber}[1]{%
-  \IsInteger{#1}{\uppercase\expandafter{\romannumeral #1\relax}}{#1}%
-}
-\renewcommand{\chapternumberline}[1]{\chaptername\space\formatchapternumber{#1}:\space}
+% numeric chapter numbers - Shyam
+%\newcommand{\formatchapternumber}[1]{%
+%  \IsInteger{#1}{\uppercase\expandafter{\romannumeral #1\relax}}{#1}%
+%}
+%\renewcommand{\chapternumberline}[1]{\chaptername\space\formatchapternumber{#1}:\space}
 \patchcmd{\cftchapterleader}{\bfseries}{\normalfont}{}{}
 \renewcommand{\cftchapterfont}{\normalfont}
 \renewcommand{\cftchapterpagefont}{\normalfont}
