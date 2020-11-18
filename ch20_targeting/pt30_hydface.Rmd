@@ -1,0 +1,17 @@
+
+`r if (knitr::is_html_output()) '<!--'`
+# Tail-anchored proteins are recognized and targeted by a short hydrophobic patch
+`r if (knitr::is_html_output()) '-->'`
+
+`r if (knitr::is_latex_output()) '<!--'`
+# A short hydrophobic patch classifies TA proteins
+`r if (knitr::is_latex_output()) '-->'`
+
+
+The correct targeting and insertion of tail-anchored (TA) integral membrane proteins (IMP) is critical for cellular homeostasis. TA proteins are generally known to be recognized by a hydrophobic transmembrane domain at their C-terminus. Derived from experimental measurements of select TMDs, little examination of the specific properties of the tail-anchor TMD has been done. As a result, many TMDs, like those with low hydrophobicity, are poorly treated by the common heuristic of a TMDs overall hydrophobicity. Given that hydrophobic residues on these TMDs appear in particular geometries, we sought to more clearly infer the geometric properties of tail-anchor alpha helices. By curating TA proteins with experimentally determined localizations and assessing various hypotheses for recognition, we come up with a metric that accurately classifies ER-bound versus mitochondrial TA proteins: the most hydrophobic 3x3 residue patch of a TMD. We take proteins with a previously unknown localization and show that our new metric successfully identifies their localization. Our metric generalizes from yeast to a curated set of human TA proteins as well and opens the door for more detailed mechanistic experiments as to the molecular factors underlying this specific recognition.
+
+### Citation
+
+An initial version of this work is available as
+
+Fry\*, Saladi\*, Clemons. Tail-anchored proteins are recognized and targeted by a short hydrophobic patch

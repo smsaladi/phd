@@ -1,0 +1,17 @@
+
+`r if (knitr::is_latex_output()) '<!--'`
+# Defining the STI1 domain
+`r if (knitr::is_latex_output()) '-->'`
+
+`r if (knitr::is_html_output()) '<!--'`
+# Defining the STI1 domain: a flexible hydrophobic-helix interacting fold
+`r if (knitr::is_html_output()) '-->'`
+
+
+STI1 domains are present in a variety of co-chaperone proteins and mediate the transfer of hydrophobic alpha helical substrates in cellular processes.  First coined DP1 and DP2 due to their prevalence of aspartates (D) and prolines (P) in the yeast Sti1 protein required for client-binding they are now termed ‘STI1’-domains. Based on hidden Markov model searches, this domain has been found in other proteins including the yeast co-chaperone Sgt2, the DNA damage response protein RAD23, and the chloroplast import protein Tic40. Here, we refine the domain definition, carry out structure-based sequence alignment of STI1 domains showing conservation of five amphipathic helices, identify a preceding helix 0 potentially involved in setting a threshold for substrate recognition, and recognize that STI1 domains nearly always occur in pairs, which leaves the possibility of cooperation between the two STI1 domains. The similarity at the sequence, structure, and molecular levels could suggest an underlying evolutionary relationship as well.
+
+### Citation
+
+An initial version of this work is available as
+
+Fry\*, Saladi\*, Clemons. Defining the STI1 domain: a flexible hydrophobic-helix interacting fold.

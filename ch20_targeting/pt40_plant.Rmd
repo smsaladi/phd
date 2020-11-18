@@ -1,0 +1,16 @@
+
+`r if (knitr::is_html_output()) '<!--'`
+# A clade of Get3 proteins associated with photosynthesis
+`r if (knitr::is_html_output()) '-->'`
+
+`r if (knitr::is_latex_output()) '<!--'`
+# Photosynthetic Get3 proteins
+`r if (knitr::is_latex_output()) '-->'`
+
+Homologs of the eukaryotic protein Get3 have been identified in all domains of life, yet their various roles remain to be fully characterized. In yeast and animals, Get3 has the clearly defined role of targeting tail-anchored (TA) membrane proteins, characterized by a single transmembrane domain at their C-terminus, to the endoplasmic reticulum. While most fungi and Metazoa have a single Get3 gene, plants are marked by the presence of several Get3 paralogs. One paralog, Get3d in Arabidopsis thaliana, is conserved throughout land plants and photosynthetic bacteria and includes a C-terminal alpha-crystallin small heat-shock protein (sHSP) fold. After tracing its evolutionary origin, we solve the AtGet3d crystal structure, identify its localization to the chloroplast, and provide evidence for a role in TA protein binding. We find that structure is nearly identical to that of a cyanobacterial Get3 homolog, which has been further refined here. Distinct features of these proteins include, an incomplete nucleotide binding pocket, a ‘closed’ form in its apo-state, and a closed chamber instead of a binding groove. Both AtGet3d and its cyanobacterial homolog are capable of binding TA proteins independent of the sHSP domains supporting a potential role in TA targeting. Get3d is conserved across the evolution of photosynthesis, from green-sulfur and cyano- bacteria to plants, suggesting a role in the homeostasis of photosynthetic machinery.
+
+### Citation
+
+This work will be available as
+
+

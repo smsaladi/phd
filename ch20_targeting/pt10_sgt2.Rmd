@@ -1,0 +1,17 @@
+
+`r if (knitr::is_latex_output()) '<!--'`
+# Sgt2-C's helical-hand binds short hydrophobic helicies
+`r if (knitr::is_latex_output()) '-->'`
+
+`r if (knitr::is_html_output()) '<!--'`
+# The client-binding domain of the cochaperone SGTA/Sgt2 has a helical-hand structure that binds a short hydrophobic helix
+`r if (knitr::is_html_output()) '-->'`
+
+The targeting and insertion of tail-anchored (TA) integral membrane proteins (IMP) into the correct membrane is critical for cellular homeostasis. The fungal protein Sgt2, and its human homolog SGTA, binds hydrophobic clients and is the entry point for targeting of ER-bound TA IMPs. Here we reveal molecular details that underlie the mechanism of Sgt2 binding to TA IMP clients. We establish that the Sgt2 C-terminal region is flexible but conserved and sufficient for client binding. A molecular model for this domain reveals a helical hand forming a hydrophobic groove, consistent with a higher affinity for TA IMP clients with hydrophobic faces and a minimal length of 11 residues. This work places Sgt2 into a broader family of TPR-containing co-chaperone proteins.
+
+### Citation
+
+An early version of this work is available as
+
+Lin, Fry\*, Saladi\*, Clemons. The client-binding domain of the cochaperone SGTA/Sgt2 has a helical-hand structure
+that binds a short hydrophobic helix. in prep. 10.1101/517573 (pre-print)

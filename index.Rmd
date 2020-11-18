@@ -1,0 +1,50 @@
+---
+title: Investigations on the computer
+author: Shyam Saladi
+site: bookdown::bookdown_site
+
+copyyear: 2021
+defense: XXX XX, 202X
+orcid: 0000-0001-9701-3059
+degree: |
+    Doctor of Philosophy in  
+    Biochemistry and Molecular Biophysics
+rights_statement: |
+    Some rights reserved. This thesis is distributed under a
+    Creative Commons Attribution License CC-BY 4.0. All software used in the
+    analysis and generation of figures is distributed under a Berkeley Software Distribution-3 Clause License and
+    is available in a GitHub repository
+    \href{http://github.com/smsaladi/phd}{http://github.com/smsaladi/phd} (DOI: 10.5281/zenodo.XXXX).
+    A digital, live version of this thesis can be accessed via (live)
+    \href{http://shyam.saladi.org/phd}{http://shyam.saladi.org/phd} or at \href{https://resolver.caltech.edu/CaltechTHESIS}{https://resolver.caltech.edu/CaltechTHESIS} (archival).
+logo: true
+
+# ownpubs: frontmatter/published.md
+# acknowledgements: frontmatter/acknowledgements.md
+# abstract: frontmatter/abstract.md
+
+degree_title: Biochemistry and Molecular Biophysics
+indent: true
+
+
+bibliography: references.bib
+csl: elife.csl
+suppress-bibliography: true
+---
+
+`r if (knitr::is_latex_output()) '<!--'`
+
+# &nbsp; {.unnumbered}
+
+## Investigations on membrane proteins, molecular chaperones, and color on the computer {.unnumbered}
+
+This is the online version of my dissertation, **currently under development**.
+
+## License {.unnumbered}
+
+The contents of this book are licensed to you under [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/). Parts available under another license are so indicated.
+
+The code samples are licensed under [Creative Commons CC0 1.0 Universal (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/), i.e. public domain.
+
+`r if (knitr::is_latex_output()) '-->'`
+

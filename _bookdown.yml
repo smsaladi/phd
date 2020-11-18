@@ -1,0 +1,42 @@
+book_filename: "saladi-thesis"
+language:
+  ui:
+    chapter_name: "Chapter "
+delete_merged_file: true
+new_session: no
+
+rmd_files:
+  [
+    "index.Rmd",
+
+    "ch00_frontmatter/pt30_preface.md",
+    "ch00_frontmatter/pt40_pubs.md",
+
+    "ch10_improve.md",
+    "ch10_improve/pt10_jbc_abstract.md",
+    "ch10_improve/pt20_cgmd.md",
+    "ch10_improve/pt90_epilogue.md",
+
+    "ch20_targeting.md",
+    "ch20_targeting/pt10_sgt2.Rmd",
+    "ch20_targeting/pt20_sti1.Rmd",
+    "ch20_targeting/pt30_hydface.Rmd",
+    "ch20_targeting/pt40_plant.Rmd",
+
+    "ch30_color.md",
+    "ch30_color/pt10_jetfighter.md",
+    "ch30_color/pt20_structure.md",
+    "ch30_color/pt90_epilogue.md",
+
+    "ch40_alignments.md",
+    "ch40_alignments/pt10_eastdb_abstract.md",
+    "ch40_alignments/pt40_clc.md",
+    "ch40_alignments/pt50_giardia.md",
+
+    "ch50_advocacy.md",
+    "ch50_advocacy/pt10_travel.md",
+    "ch50_advocacy/pt20_dei.md",
+    "ch50_advocacy/pt30_moltemplate.md",
+    "ch50_advocacy/pt40_bits.md",
+  ]
+

@@ -1,0 +1,19 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#e65c00"  # A bit darker than "#FF6C0C"
+  repo: https://github.com/smsaladi/phd
+  includes:
+    in_header: [ga_script.html, no_robots.html]
+#  css: ["style.css", "toc.css", "mystyles.css"]
+
+bookdown::pdf_book:
+  top_level_division: chapter
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+  template: template.tex
+  pandoc_args: [
+      "--filter", "pandoc-crossref",
+      "--top-level-division", "chapter",
+      "--resource-path", ".:./ch30_color/"
+  ]
