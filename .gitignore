@@ -1,0 +1,19 @@
+# Common
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+
+# Bookdown build files
+_book
+_bookdown_files
+bookdown::*
+now.json
+'.
+*.log
+*.nlo
+
+.Rproj.user
