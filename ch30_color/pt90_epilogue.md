@@ -1,3 +1,3 @@
-## Epilogue
+# Epilogue
 
 Some parting thoughts
