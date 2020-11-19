@@ -13,9 +13,6 @@ on:
 
 name: build-book
 
-env:
-  isExtPR: ${{ github.event.pull_request.head.repo.fork == true }}
-
 jobs:
   build:
     runs-on: macOS-latest
@@ -56,5 +53,7 @@ jobs:
       - name: Build book
         run: ./_build.sh
       - name: Deploy book
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./_deploy.sh
 
