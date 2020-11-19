@@ -4,7 +4,7 @@ bookdown::bs4_book:
   repo: https://github.com/smsaladi/phd
   includes:
     in_header: [ga_script.html, no_robots.html]
-#  css: ["style.css", "toc.css", "mystyles.css"]
+  css: ["mystyles.css"]
 
 bookdown::pdf_book:
   top_level_division: chapter
