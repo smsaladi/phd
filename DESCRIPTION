@@ -2,5 +2,14 @@ Package: placeholder
 Type: Book
 Title: Investigations on membrane proteins, molecular chaperones, and color on the computer
 Version: 0.0.1
-Imports: bookdown, tidyverse
-Remotes: smsaladi/phd
+Imports:
+   bookdown,
+   tidyverse,
+   bslib,
+   downlit,
+   desc,
+   sessioninfo
+Remotes: 
+   github::rstudio/bookdown,
+   github::rstudio/bslib
+
