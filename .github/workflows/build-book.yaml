@@ -1,0 +1,63 @@
+#
+## Based on the mastering-shiny workflow
+# https://github.com/hadley/mastering-shiny/commit/fd22fac0a581fc7abe128ffb9ee86a0070e74e3b
+# Downloaded Nov 11, 2020
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+name: build-book
+
+env:
+  isExtPR: ${{ github.event.pull_request.head.repo.fork == true }}
+
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+
+      - name: Setup pandoc
+        uses: r-lib/actions/setup-pandoc@master
+
+      - name: Cache R packages
+        uses: actions/cache@v1
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: r-6-${{ hashFiles('DESCRIPTION') }}
+          restore-keys: r-6-
+
+      - name: Install pak
+        run: |
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/dev/")
+        shell: Rscript {0}
+
+      - name: Install dependencies
+        run: |
+          pak::local_install_dev_deps(upgrade = TRUE)
+        shell: Rscript {0}
+
+      - name: Install PhantomJS
+        run: R -e 'webshot::install_phantomjs()'
+
+      - name: Cache bookdown results
+        uses: actions/cache@v1
+        with:
+          path: _bookdown_files
+          key: bookdown-2-${{ hashFiles('**/*Rmd') }}
+          restore-keys: bookdown-2-
+
+      - name: Build book
+        run: ./_build.sh
+      - name: Deploy book
+        run: ./_deploy.sh
+
