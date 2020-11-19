@@ -46,9 +46,6 @@ jobs:
           pak::local_install_dev_deps(upgrade = TRUE)
         shell: Rscript {0}
 
-      - name: Install PhantomJS
-        run: R -e 'webshot::install_phantomjs()'
-
       - name: Cache bookdown results
         uses: actions/cache@v1
         with:
